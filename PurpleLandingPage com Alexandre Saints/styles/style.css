@@ -1,0 +1,114 @@
+:root {
+    --purple: #840ec9;
+    --background: #282828;
+    --corWhite: #fff;
+
+    --fontPoppinsBlack: 'poppinsblack';
+    --fontPoppinsBold: 'poppinsbold';
+    --fontPoppinsLight: 'poppinslight';
+    --fontPoppinsMedium: 'poppinsmedium';
+    --fontPoppinsRegular: 'poppinsregular';
+    --fontPoppinsSemiBold: 'poppinssemibold';
+}
+
+body {
+    background-color: var(--background);
+    color: var(--corWhite);
+    font-family: var(--fontPoppinsRegular);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#title {
+    flex-direction: column;
+    line-height: 10px;
+}
+
+li {
+    display: inline-block;
+    margin:20px;
+}
+
+h1 {
+    font-weight: 200;
+}
+
+a {
+    font-family: var(--fontPoppinsRegular);
+    color:var(--corWhite);
+}
+a:hover {
+    color:var(--purple);
+    transition: .4s all;    
+}
+
+#inscreva-se-btn {
+    border: 2px solid var(--purple);
+    padding:10px;
+    border-radius: 15px;
+}
+#inscreva-se-btn:hover {
+    background-color: var(--purple);
+    color:var(--corWhite);
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+h2 {
+    font-size: 56px;
+    line-height: 10px;
+    font-family: var(--fontPoppinsMedium);
+}
+
+span {
+    color:var(--purple);
+}
+
+p {
+    line-height: 20px;
+    max-width: 500px;
+    font-family: var(--fontPoppinsLight);    
+}
+
+img {
+    width:580px;
+}
+
+form {
+    display:flex;
+    flex-direction: column;
+    width:70%;
+}
+
+form [type="submit"] {
+    height:50px;
+    width:50%;
+    background-color: var(--purple);
+    color:var(--corWhite);
+    font-weight: bold;
+}
+form [type="submit"]:hover {
+    cursor: pointer;
+}
+
+input {
+    margin-top: 20px;
+    height:20px;
+    padding:15px;
+    border-radius: 15px;
+    outline: none;
+    border:none;
+    font-size:15px;
+}
